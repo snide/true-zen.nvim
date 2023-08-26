@@ -25,7 +25,7 @@ function M.custom_folds_style()
 	elseif FOLDS_STYLE == "informative" then
 		local v = vim.v
 		local fold_count = v.foldend - v.foldstart + 1
-		local prefix = "   " .. fold_count
+		local prefix = "+  " .. fold_count
 		local separator = "   "
 		return prefix .. separator .. fn.getline(v.foldstart)
 	end
